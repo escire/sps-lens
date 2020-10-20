@@ -58,8 +58,9 @@ body.reader #container {
 }
 
 body, textarea, p, input {
-  font-family: 'Source Sans Pro', Helvetica, Arial, Verdana, sans-serif;
+  font-family: 'Source Sans Pro', Helvetica, Arial, Verdana, sans-serif !important;
   color: #505050;
+  font-weight: 400 !important;
 }
 
 a {

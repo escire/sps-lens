@@ -14,7 +14,7 @@ FootnoteReferenceView.Prototype = function() {
 
   this.render = function() {
     var footnote = this._getFootnote();
-    console.log(footnote);
+
     // this.el.innerHTML = formulaView.render().el.innerHTML;
     this.el.innerHTML = "";
     this.toggleEl = $$('a', {href: '#', html: footnote.properties.label});

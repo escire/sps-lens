@@ -8,7 +8,7 @@ var CORRECTION = 0; // Extra offset from the top
 
 /* Adding + 1 pixel solves an edge case where clicking on a
    TOC item did not mark it as active, but the previous one */
-var MENU_BAR_HEIGHT = 1; 
+var MENU_BAR_HEIGHT = 1;
 
 var ContentPanelView = function( panelCtrl, viewFactory, config ) {
   ContainerPanelView.call(this, panelCtrl, viewFactory, config);
@@ -104,7 +104,7 @@ ContentPanelView.Prototype = function() {
           console.error('Could not find element for node %s', tocNode.id);
           continue;
         }
-        
+
         // HACK: we subtract height of menu bar so marking of active nodes stays accurate
         var elTopOffset = $(el).offset().top - MENU_BAR_HEIGHT;
         if (elTopOffset <= 0) {
@@ -114,7 +114,7 @@ ContentPanelView.Prototype = function() {
       }
     }
     this.tocView.setActiveNode(activeNode);
-  };
+  }; 
 
   this.markReferencesTo = function(target) {
     // Mark all annotations that reference the resource

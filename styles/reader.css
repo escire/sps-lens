@@ -42,7 +42,7 @@ out (on iOS 5.1), or flicker (on iOS 6). */
 
 .article .document {
   line-height: 28.5px;
-  font-size: 17px;
+  font-size: 17px !important;
   position: relative;
   float: left;
   overflow: hidden;
@@ -660,9 +660,13 @@ TOC
 .resource-view.toc .heading-ref .title, .resource-view.toc .heading .content .title .content { display: inline; }
 
 .resource-view.toc .heading-ref.active {
-  color: rgba(0,0,0,0.9);
-  background: #fff;
-  border: 1px solid #eee;
+  color: #1B6685;
+  background: rgba(11, 157, 217, 0.075);
+  border: 1px solid rgba(11, 157, 217, 0.4);
+}
+
+.resource-view.toc .heading-ref span:hover {
+  color: rgba(11, 157, 217, 1);
 }
 
 .resource-view.toc .heading-ref.level-2 {

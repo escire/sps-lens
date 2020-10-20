@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "192.168.100.100",
+  "port": "22",
+  "target": "/home/omar/sps-lens-starter/node_modules/lens",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "omar",
+  "password": "villa",
+  "watch": [],
+  "transport": "scp"
+}

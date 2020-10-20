@@ -164,7 +164,8 @@ ReaderView.Prototype = function() {
 
       var self = this;
       // MathJax requires the processed elements to be in the DOM
-      if (window.MathJax){
+      // SPS Fix: Javascript error to read Queue in undefined object
+      if (window.MathJax && window.MathJax.Hub !== undefined){
         window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub]);
         window.MathJax.Hub.Queue(function () {
           // HACK: using updateState() instead of updateScrollbars() as it also knows how to scroll
